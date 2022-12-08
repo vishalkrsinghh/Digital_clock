@@ -12,10 +12,12 @@ let clock = () => {
     else {
         pm = "AM";
     }
+    let tdate=date.getDate();
+    let cYear=date.getFullYear();
     let minutes = date.getMinutes();
     let seconds = date.getSeconds();
     innerDiv.innerHTML = `<h3>${hour}:${minutes}:${seconds} ${pm}
-   &nbsp ${days[date.getDay()]} , ${months[date.getMonth()]}</h3>`;
+   &nbsp ${days[date.getDay()]} , ${tdate}-${months[date.getMonth()]}-${cYear}</h3>`;
 
 }
 setInterval(clock, 1000);
