@@ -9,6 +9,10 @@ let clock = () => {
         hour = hour - 12;
         pm = "PM";
     }
+    else if(hour==12){
+
+        pm="PM";
+    }
     else {
         pm = "AM";
     }
